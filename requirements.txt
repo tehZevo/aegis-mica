@@ -1,0 +1,5 @@
+stable_baselines3
+gymnasium
+pyyaml
+git+https://github.com/tehzevo/rnd
+git+https://github.com/tehzevo/nd-to-json

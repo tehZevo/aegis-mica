@@ -1,0 +1,13 @@
+size: 32
+
+links:
+  self:
+    algorithm: ppo
+    recurrent: false
+    size: 32
+    url: http://somewhere
+  other:
+    algorithm: ppo
+    recurrent: true
+    size: 128
+    url: http://somewhere-else
