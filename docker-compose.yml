@@ -2,8 +2,7 @@ services:
   mica:
     build: .
     volumes:
-      - "./nodes/node:/app/node"
+      - "./node-data:/app/node-data"
     environment:
-      NODE_PATH: "/app/node"
       GPU: "false"
     

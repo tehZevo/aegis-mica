@@ -4,7 +4,7 @@ PORT = int(os.getenv("PORT", 80))
 SAVE_EVERY = int(os.getenv("SAVE_EVERY", 1000))
 NICE = float(os.getenv("NICE", 0.5))
 GPU = True if os.getenv("GPU", "true").lower == "true" else False
-NODE_PATH = os.getenv("NODE_PATH", "nodes/node")
+NODE_PATH = os.getenv("NODE_PATH", "node-data")
 
 if not GPU:
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
