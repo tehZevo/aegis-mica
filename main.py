@@ -5,7 +5,6 @@ SAVE_EVERY = int(os.getenv("SAVE_EVERY", 1000))
 NICE = float(os.getenv("NICE", 0.5))
 GPU = True if os.getenv("GPU", "true").lower == "true" else False
 NODE_PATH = os.getenv("NODE_PATH", "nodes/node")
-RESIZE_TO = os.getenv("RESIZE_TO", None)
 
 if not GPU:
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"

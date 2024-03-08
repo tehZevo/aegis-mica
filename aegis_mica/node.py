@@ -71,7 +71,7 @@ class Node:
             #TODO: remove print
             print("nothing to update...")
             return
-        
+            
         #wait for all of our links
         for link in self.links.values():
             link.env.action_updated.wait()

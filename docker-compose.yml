@@ -1,0 +1,9 @@
+services:
+  mica:
+    build: .
+    volumes:
+      - "./nodes/node:/app/node"
+    environment:
+      NODE_PATH: "/app/node"
+      GPU: "false"
+    
